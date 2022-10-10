@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XMy-sV-Ehk">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ObjectsML" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera.on.rectangle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="G1v-ND-w9w">
+                                <rect key="frame" x="0.0" y="103.33333333333331" width="430" height="695.33333333333337"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C7n-WI-VOF">
+                                <rect key="frame" x="0.0" y="798" width="430" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confidence= ...%" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tm9-Ne-Es8" userLabel="Confidence">
+                                        <rect key="frame" x="8" y="0.0" width="414" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identifier= ...." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YM6-CF-ihb" userLabel="Object">
+                                        <rect key="frame" x="8" y="28" width="414" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="YM6-CF-ihb" firstAttribute="leading" secondItem="C7n-WI-VOF" secondAttribute="leading" constant="8" id="5k6-FJ-APA"/>
+                                    <constraint firstItem="YM6-CF-ihb" firstAttribute="trailing" secondItem="tm9-Ne-Es8" secondAttribute="trailing" id="VQd-yu-r3I"/>
+                                    <constraint firstItem="YM6-CF-ihb" firstAttribute="leading" secondItem="tm9-Ne-Es8" secondAttribute="leading" id="Zfy-DC-hxU"/>
+                                    <constraint firstAttribute="trailing" secondItem="tm9-Ne-Es8" secondAttribute="trailing" constant="8" id="bIF-j7-K5l"/>
+                                    <constraint firstAttribute="trailing" secondItem="YM6-CF-ihb" secondAttribute="trailing" constant="8" id="bVT-Dm-Xmp"/>
+                                    <constraint firstItem="YM6-CF-ihb" firstAttribute="top" secondItem="tm9-Ne-Es8" secondAttribute="bottom" constant="4" id="eG8-c9-z2A"/>
+                                    <constraint firstItem="tm9-Ne-Es8" firstAttribute="top" secondItem="C7n-WI-VOF" secondAttribute="top" id="z3d-RQ-aOD"/>
+                                    <constraint firstAttribute="height" constant="100" id="zAV-5H-oNz"/>
+                                    <constraint firstItem="tm9-Ne-Es8" firstAttribute="leading" secondItem="C7n-WI-VOF" secondAttribute="leading" constant="8" id="zfX-1i-pIv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="G1v-ND-w9w" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="19L-ng-6zq"/>
+                            <constraint firstItem="G1v-ND-w9w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7mi-me-AY2"/>
+                            <constraint firstItem="G1v-ND-w9w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="D1G-c7-iSK"/>
+                            <constraint firstItem="C7n-WI-VOF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Hl4-Dm-iCg"/>
+                            <constraint firstItem="C7n-WI-VOF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="KYV-dE-pMr"/>
+                            <constraint firstItem="C7n-WI-VOF" firstAttribute="top" secondItem="G1v-ND-w9w" secondAttribute="bottom" constant="-1" id="WaQ-fp-hWv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="C7n-WI-VOF" secondAttribute="bottom" id="jI9-fZ-QgV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C7n-WI-VOF" secondAttribute="trailing" id="jQp-aj-rWi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ddF-3j-SWk">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="pc6-N4-N4J">
+                            <connections>
+                                <action selector="CameraTapped:" destination="BYZ-38-t0r" id="VKO-ro-63F"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="confidenceLabel" destination="tm9-Ne-Es8" id="TAr-Pi-QeQ"/>
+                        <outlet property="imageView" destination="G1v-ND-w9w" id="Uj5-vC-lfm"/>
+                        <outlet property="objectLabel" destination="YM6-CF-ihb" id="3zk-ra-WSd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052.0930232558139" y="102.36051502145924"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="e58-my-poT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XMy-sV-Ehk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IS5-vY-VKB">
+                        <rect key="frame" x="0.0" y="59" width="430" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZAC-8s-H5C"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lZk-jJ-11c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="193" y="103"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera.on.rectangle" catalog="system" width="128" height="98"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
