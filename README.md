@@ -3,7 +3,7 @@ Object ML
 This is an application that uses a Machine Learning model to recognize objects that have been photographed or selected from photo library
 
 ## Screenshots
-<img src="./img/primo.png" width = 280 style="padding-right:70" > <img src="./img/secondo.png" width = 280 style="padding-right:70"> <img src="./img/terzo.png" width = 280 >
+<img src="./img/primo.png" width = 250> <img src="./img/secondo.png" width = 250> <img src="./img/terzo.png" width = 250>
 
 
 ## Features
